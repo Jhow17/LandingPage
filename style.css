@@ -120,7 +120,7 @@ input{
     border-radius: 7px;
     padding: 10px;
 }
-.about{
+.container{
     height: 80vh;
     display: grid;
     grid-template-columns: 60% 40%;
