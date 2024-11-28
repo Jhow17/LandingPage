@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;300;400;500;700;900&family=Teko:wght@500&display=swap');
+
 :root {
     --background-color: #F8F9F9; /* Cinza muito claro */
     --primary:  #2E86C1; /* Azul claro */
@@ -6,6 +7,14 @@
     --text-color: #2C3E50; /* Cinza escuro */
     --text-color-secondary: #5D6D7E; /* Cinza médio */
     --text-color-tertiary: #F0F0F0; /* Cinza claro */
+}
+*{
+    margin: 0;
+    padding: 0; 
+    border:none; 
+    outline:none;
+    list-style-type:none;
+    box-sizing: border-box;
 }
 html{
     /* deixar o rem decimal */
@@ -23,14 +32,12 @@ body{
     font-family: "Teko", serif;
     font-weight: 700;
 }
-
 p{
     font-family: "Montserrat", serif;
     font-size: 1.5em;
     font-weight: 500;
     line-height: 1em;
 }
-
 nav{
     font-size: 2rem;
     color: white;
@@ -81,17 +88,16 @@ main{
     background-position: center;
     background-size:cover;
     color: var(--text-color-tertiary);
-
 }
 .hero-apresentacao{
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap:5rem;
-    padding: 0rem 2rem;
+    padding: 0rem 5rem;
 }
 .hero-login{
     width: 50%;
@@ -100,7 +106,7 @@ main{
     align-items: center;
     justify-content: center;
 }
-#login{
+#loginForm{
     color: var(--text-color);
     border-radius: 10px;
     background-color: var(--background-color);
@@ -113,49 +119,123 @@ main{
     font-family: "Roboto", serif;
     font-weight: 500;
 }
-input{
+input, textarea{
     width: 80%;
     border:none;
     border: 1px solid black;
     border-radius: 7px;
     padding: 10px;
 }
-.container{
-    height: 80vh;
-    display: grid;
-    grid-template-columns: 60% 40%;
-    padding: 1rem;
-
-}
-.imagem-section{
+.about{
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.imagem-texto{
-    width: 80%;
 }
 .texto{
-    max-width: 85%;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    gap:3rem;
+    align-items: flex-start;
+    justify-content:flex-start;
+    padding: 0  5rem;
+    gap:5rem;
 }
-.titulo-section{
-    color: var(--text-color);
-    font-size: 3.5rem;
+.titulo{
+    color: var(--primary);
+    font-size: 4rem;
     font-family: "Teko", serif;
     font-weight: 600;
 }
-.texto-section{
+.paragrafo{
+    max-width:60rem;
+    text-align: left;
     font-family: "Montserrat", serif;
-    font-size: 1.7em;
-    font-weight: 500;
-    line-height: 1em;
-}
-.beneficio-bloco h3 {
-    margin-bottom: 10px;
     font-size: 1.5em;
+    font-weight: 500;
+    line-height: 2em;
+}
+.lista li,
+.lista-bloco li {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ h3 {
+    font-size: 2rem;
+    color: #005b96;
+    margin-bottom: 10px;
+}
+
+.imagem{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imagem img{
+    width: 50em;
+    height: 50em ;
+    border-radius: 10px;
+
+}
+.bloco-impactos {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.impactos{
+    padding-left: 4.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+.impacto {
+    width: 40%;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color:var(--text-color-tertiary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.negativo {
+    border-left: 5px solid #f44336; /* cor para negativo */
+}
+
+.positivo {
+    border-left: 5px solid #4caf50; /* cor para positivo */
+}
+.lista-impactos {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.lista-impactos li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #666;
+}
+.contato{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#form-contato{
+    width: 50%;
+    height: 80%;
+    background-color: var(--text-color-tertiary);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding:3rem;
 }
