@@ -13,16 +13,16 @@
                 <span>Notificaçoes</span>
             </figure>
             <ul class="menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">Solutions</a></li>
-                <li><a href="">Benefícios</a></li>
-                <li><a href="">Funcionalidades</a></li>
+                <li><a href="#about">Home</a></li>
+                <li><a href="#impactos">Solução</a></li>
+                <li><a href="#funcionalidades">Funcionalidades</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
             </ul>
-            <a href="#" class="btn">Contato</a>
+            <a href="#contato" class="btn">Contato</a>
         </nav>
     </header>
     <main>
-        <section class="section-hero">
+        <section class="section-hero" id="hero">
             <div class="hero-apresentacao">
                 <h1 class="destaque">Notificações Giro de Leitos</h1>
                 <p>Uma solução digital automatizada que gerencia o fluxo de pacientes nos leitos, comunicando de forma eficiente o status dos leitos para as equipes.</p>
@@ -37,7 +37,7 @@
                 </form>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="texto">
                 <h2 class="titulo">Acelere o Giro de Leitos no Seu Hospital com Notificações Inteligentes</h2>
                 <p class="paragrafo">Nosso sistema automatiza a comunicação entre equipes de limpeza, manutenção e enfermagem, garantindo que leitos sejam preparados de forma rápida e eficiente para o próximo paciente.</p>
@@ -60,7 +60,7 @@
                 <img src="img/Leito-fundo.jpg" alt="tela que simule o sistema" class="imagem-texto">
             </div>
         </section>
-        <section class="impactos">
+        <section class="impactos" id="impactos">
                 <h2 class="titulo">Como nosso sistema transforma a gestão hospitalar</h2>  
                 <div class="cards">
                     <div class="impacto negativo">
@@ -93,7 +93,7 @@
                     </div>
                 </div>
         </section>
-        <section class="funcionalidades">
+        <section class="funcionalidades" id="funcionalidades">
             <div class="texto">
                 <h2 class="titulo">Funcionalidades do Sistema</h2>
             </div>
@@ -104,8 +104,46 @@
                     <li><strong>Interface fácil de usar:</strong> Design intuitivo adaptado para cada equipe.</li>
                 </ul>
         </section>
-        <section class="contato">
-
+        <section class="beneficios" id="beneficios">
+            <div class="texto">
+                <h2 class="titulo">Transforme Sua Rotina com Nosso Produto Revolucionário!</h2>
+                <p class="paragrafo">Eficiência, conforto e tecnologia em um só lugar para melhorar seu dia a dia.</p>
+                <div class="beneficios-list">
+                    <div class="beneficios-item">
+                        <i class="icon">🚀</i>
+                        <h3>Desempenho Rápido</h3>
+                        <p>Reduza seu tempo de espera em até 50%.</p>
+                    </div>
+                    <div class="beneficios-item">
+                        <i class="icon">💡</i>
+                        <h3>Fácil de Usar</h3>
+                        <p>Interface intuitiva que qualquer um pode dominar.</p>
+                    </div>
+                    <div class="beneficios-item">
+                        <i class="icon">🔒</i>
+                        <h3>Segurança Máxima</h3>
+                        <p>Proteja suas informações com a mais avançada tecnologia de criptografia.</p>
+                    </div>
+                    <div class="beneficios-item">
+                        <i class="icon">🌍</i>
+                        <h3>Sustentável</h3>
+                        <p>Desenvolvido com materiais ecologicamente corretos.</p>
+                    </div>
+                    <div class="beneficios-item">
+                        <i class="icon">📈</i>
+                        <h3>Melhora Contínua</h3>
+                        <p>Receba atualizações automáticas com novos recursos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="beneficios-imagem">
+                <img src="img/3d-cartoon-hospital-healthcare-scene.jpg" alt="Produto em uso" class="imagem-texto">  
+                <div class="cta">
+                    <a href="#" class="btn">Experimente Agora</a>
+                </div>  
+            </div>      
+        </section>
+        <section class="contato" id="contato">
             <form id="form-contato">
                 <h2 class="titulo">Entre em contato</h2>
                 <input type="text" id="nome" placeholder="Nome" required>
@@ -117,6 +155,20 @@
 
         </section>
     </main>
+    <footer class="rodape">
+        <ul class="rodape__lista">
+            <li class="lista__link">
+                <p>Endereço: Rua Exemplo, 123, São Paulo, SP</p>
+            </li>
+            <li class="lista__link">
+                <p>Tel: (11) 1234-5678</p>
+            </li>
+            <li class="lista__link">
+                <p><a href="mailto:contato@sistemadeleitos.com">contato@sistemadeleitos.com</a></p>
+            </li>
+        </ul>
+        <p class="rodape__texto">&copy; 2024 Sistema de Notificação de Giro de Leitos. Todos os direitos reservados.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
